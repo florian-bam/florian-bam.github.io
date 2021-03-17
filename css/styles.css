@@ -190,7 +190,7 @@ a.social:hover {
   display: inline-block;
   text-align: center;
   top: auto;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 #main-experience {
@@ -350,8 +350,8 @@ header>.name {
   .m-nav-name>.name {
     margin: 0 auto 0 55px;
   }
-  header .profile-image {
-
+  .experience-title {
+    padding-top: 100px;
   }
 
   /* ================= */
