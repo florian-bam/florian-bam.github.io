@@ -255,6 +255,57 @@ address em {
 }
 /* Florian end */
 
+/* Fixing header for mobile */
+/* ================ */
+nav>.name {
+  color: #fff;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 20px;
+  font-weight: 700;
+}
+#logo {
+  margin-top: 0;
+}
+li {
+  list-style: none;
+}
+.right-nav {
+  margin-left: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.m-nav-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 50%;
+  align-items: center;
+  margin-top: 7px;
+}
+.m-nav-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1 50%;
+  align-items: center;
+  margin-top: 7px;
+}
+.nav li {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 3px 0;
+}
+li>a {
+  align-self: center;
+}
+header .profile-image {
+  margin-top: 203px;
+}
+/* ================ */
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -289,6 +340,87 @@ address em {
     max-width: 1200px;
     margin: 40px auto;
   }
-
+  
+  /* Start header stuff */
+  /* ================= */
+  .nav li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 3px 0;
+  }
+  li>a {
+    align-self: center;
+  }
+  header .profile-image {
+    margin-top: 203px;
+  }
+  header .profile-image {
+    margin-top: 130px;
+  }
+  .main-nav {
+  width: 100%;
+  background: linear-gradient(to right, rgba(247, 168, 21) 0%, rgba(249, 216, 107, 1) 100%);
+  min-height: 70px;
+  position: fixed;
+  text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 0;
+  }
+  .nav .name {
+      display: block;
+      margin-right: auto;
+      color: white;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  } 
+  .right-nav {
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  .right-nav {
+    margin-left: 0;
+  }
+  nav>.name {
+    display: flex;
+    margin: 20px auto 0 90px;
+  }
+  /* .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } */
+  .nav,
+  .m-nav-left,
+  .m-nav-right {
+    display: inline-block;
+  }
+  nav>ul {
+    display: flex;
+    margin-left: auto;
+  }
+  .m-nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7px;
+  }
+  .m-nav-right {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    margin-top: 7px;
+  }
 }
 
