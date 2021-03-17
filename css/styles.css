@@ -121,7 +121,7 @@ ul.skills {
 }
 
 footer {
-  width: 100%;
+  width: 80vw;
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
@@ -353,7 +353,6 @@ header>.name {
   .experience-title {
     padding-top: 100px;
   }
-
   /* ================= */
 }
 
