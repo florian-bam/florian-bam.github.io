@@ -31,8 +31,6 @@ a:hover {
   text-align: center;
 }
 .nav {
-  display: flex;
-  justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
   padding: 0;
@@ -40,12 +38,10 @@ a:hover {
 
 .nav .name {
     display: block;
-    margin-right: auto;
     color: white;
 }
 
 .name {
-  margin-left: 60px;
   font-size: 1.5em;
 }
 .nav li {
@@ -67,7 +63,7 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 130px;
+  margin-top: 165px;
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -172,7 +168,7 @@ a.social:hover {
 }
 /* Florian start */
 #logo {
-  width: 70px;
+  width: 65px;
   height: auto;
   border-radius: 50%;
   position:fixed;
@@ -188,12 +184,6 @@ a.social:hover {
 .my-experience {
   text-align: left;
   padding-left: 15px;
-}
-
-.right-nav {
-  display: inline-block;
-  margin-top: 7px;
-  margin-left: 10px;
 }
 
 .experience-title {
@@ -257,52 +247,45 @@ address em {
 
 /* Fixing header for mobile */
 /* ================ */
-nav>.name {
-  color: #fff;
-  list-style: none;
-  margin-left: 0;
-  margin-top: 20px;
-  font-weight: 700;
-}
-#logo {
-  margin-top: 0;
-}
-li {
-  list-style: none;
-}
-.right-nav {
-  margin-left: 0;
-}
+
+/* Containers */
 .nav {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+}
+.m-nav-name {
+  display: flex;
+  flex-direction: column;
+  flex: 1 100%;
+}
+.m-nav-nav {
+  display: flex;
+  flex: 1 100%;
 }
 .m-nav-left {
   display: flex;
   flex-direction: column;
   flex: 1 50%;
-  align-items: center;
-  margin-top: 7px;
 }
 .m-nav-right {
   display: flex;
   flex-direction: column;
   flex: 1 50%;
-  align-items: center;
-  margin-top: 7px;
 }
-.nav li {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 3px 0;
-}
-li>a {
+
+/* Elements */
+.name {
   align-self: center;
+  flex: 1;
+  padding: 0;
+  margin-top: -20px;
 }
-header .profile-image {
-  margin-top: 203px;
+
+header>.name {
+  margin-top: 10px;
+  padding: 10px;
 }
 /* ================ */
 
@@ -343,84 +326,34 @@ header .profile-image {
   
   /* Start header stuff */
   /* ================= */
-  .nav li {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 3px 0;
-  }
-  li>a {
-    align-self: center;
-  }
-  header .profile-image {
-    margin-top: 203px;
-  }
-  header .profile-image {
-    margin-top: 130px;
-  }
-  .main-nav {
-  width: 100%;
-  background: linear-gradient(to right, rgba(247, 168, 21) 0%, rgba(249, 216, 107, 1) 100%);
-  min-height: 70px;
-  position: fixed;
-  text-align: center;
-  }
+
+  /* Containers */
   .nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    padding: 0;
-  }
-  .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
-  }
-  .name {
-    font-size: 1.5em;
-  }
-  .nav li {
-    padding: 5px 10px 10px 10px;
-  } 
-  .right-nav {
-    display: inline-block;
-    margin-top: 7px;
-    margin-left: 10px;
-  }
-  .right-nav {
-    margin-left: 0;
-  }
-  nav>.name {
-    display: flex;
-    margin: 20px auto 0 90px;
-  }
-  /* .nav {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-  } */
-  .nav,
+    flex-wrap: nowrap;
+  }
+  .m-nav-name,
+  .m-nav-nav,
   .m-nav-left,
   .m-nav-right {
-    display: inline-block;
-  }
-  nav>ul {
-    display: flex;
-    margin-left: auto;
-  }
-  .m-nav-left {
-    display: flex;
+    flex: none;
     flex-direction: row;
-    align-items: center;
-    margin-top: 7px;
   }
-  .m-nav-right {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: center;
-    margin-top: 7px;
+  .m-nav-name {
+    margin-right: auto;
   }
+
+  /* Header Elements */
+  #logo {
+    margin: -13px;
+  }
+  .m-nav-name>.name {
+    margin: 0 auto 0 55px;
+  }
+  header .profile-image {
+
+  }
+
+  /* ================= */
 }
 
