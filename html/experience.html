@@ -1,83 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <link rel="stylesheet" href="../css/styles.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1,0">
-        <title>My experience</title>
+        <title>Florian Gröne</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     </head>
     <body>
-        <header id="header-experience">
-            <nav class="main-nav">
-                <ul class="nav">
-                  <div class="m-nav-name">
-                    <li><a href="https://andbam.co/" target="_blank"><img id="logo" src="../images/logo.png" alt="&Bam logo"></a></li>
-                    <li class="name">Florian</li>  
-                  </div>
-                  <div class="m-nav-nav">
-                    <div class="m-nav-left">
-                      <li class="right-nav"><a href="../index.html">Home</a></li>
-                      <li class="right-nav"><a href="#">My Experience</a></li>
-                    </div>
-                    <div class="m-nav-right">
-                      <li><a href="contact.html" class="right-nav">Contact</a></li>
-                      <li><a href="form.html" class="right-nav">Signup</a></li>
-                    </div>
-                  </div>
-                </ul>
-              </nav>
-            <h1 class="experience-title">My experience</h1>
+        <header bg-warning>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 bg-warning">
+            <!-- Nav Bar -->
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="background-color: #f8f9fa;">
+                    Florian
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav items -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ml-lg-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-7/" target="_blank">WebApp Dashboard</a>
+                              <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-5/" target="_blank">Interactive Photo Gallery</a>
+                              <a class="dropdown-item" href="http://floriangroene.com/Tech-Degree-Project-3/" target="_blank">Online Registration Form</a>
+                              <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-6/" target="_blank">Game Show App</a>
+                              <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-8/" target="_blank">API populated Employee Directory</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top">Experience</a>
+                        </li>
+                        <!-- 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                            -> Add Video Revies from Bostjan, Fritz and Nichelle + their websites (maybe even Jan?)
+                        </li>
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <main id="main-experience">
-            <section class="flex">
-                <article class="card-experience">
-                    <h3>Head of Technology at &Bam</h3>
-                    <h5>Oct 2020 - today</h5>
-                    <p>I'm currently managing the Tech team at &Bam, a Klaviyo platinum partner Email Marketing Agency.</p>
-                </article>
-                <article class="card-experience">
-                    <h3>Email Marketing consultant</h3>
-                    <h5>Jan 2020 - Oct 2020</h5>
-                    <p>Helped Digital Marketing agencies and brands to start/ expand their email marketing program. </p>
-                </article>
-                <article class="card-experience">
-                    <h3>COO at Hustlermarketing</h3>
-                    <h5>Mar 2019 - Dec 2019</h5>
-                    <p>Lead the entire production team (AMs, Copywriters, Design & Tech).</p>
-                    <p>Their current Training Program "Florian Library" was named in my honor.</p>
-                </article>
-            </section>
-            <section class="flex">
-                <article class="card-experience">
-                    <h3>Senior Account Manager at Hustler Marketing</h3>
-                    <h5>Nov 2018 - Apr 2019</h5>
-                    <p>Trained and coached team of 17 Account Managers.</p>
-                </article>
-                <article class="card-experience">
-                    <h3>Account Manager at Hustler Marketing</h3>
-                    <h5>Jul 2018 - Nov 2018</h5>
-                    <p>Managed up to 3 clients simultaneously and made them millions in additional revenue via email.</p>
-                </article>
-                <article class="card-experience">
-                    <h3>Assistant at Hustler Marketing</h3>
-                    <h5>May 2018 - Jul 2018</h5>
-                    <p>Received personal Training in Account-managing, digital marketing and copywriting from the CEO of Hustler Marketing, Bo&scaron;tjan Belinger.</p>
-                </article>
-            </section>  
-            <section class="flex">
-                <article class="card-experience" style="max-width: 350px;">
-                    <h3>Marketing Assistant at Pure Interactions</h3>
-                    <h5>May 2017 - Sep 2017</h5>
-                    <p>Worked in a small german personal developement coaching Start-Up. </p>
-                </article>
+        <main class="mx-3">
+            <section>
+            <!-- Background, Skills, Goals -->
+                <div class="row">
+                    <div class="col m-3">
+                        <h2>Experience</h2>
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Head of Technology at &Bam</h2>
+                            <p class="card-text"><em>Oct 2020 - today</em></p>
+                            <p class="card-text">I'm currently managing the Tech team at &Bam, a Klaviyo platinum partner Email Marketing Agency.</p>
+                        </article> 
+                    </div>
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Email Marketing consultant</h2>
+                            <p class="card-text"><em>Jan 2020 - Oct 2020</em></p>
+                            <p class="card-text">Helped Digital Marketing agencies and brands to start/ expand their email marketing program.</p>
+                        </article> 
+                    </div>
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">COO at Hustlermarketing</h2>
+                            <p class="card-text"><em>Mar 2019 - Dec 2019</em></p>
+                            <p class="card-text">Lead the entire production team (AMs, Copywriters, Design & Tech). Their current Training Program "Florian Library" was named in my honor.</p>
+                        </article> 
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Senior Account Manager at Hustler Marketing</h2>
+                            <p class="card-text"><em>Nov 2018 - Apr 2019</em></p>
+                            <p class="card-text">Trained and coached team of 17 Account Managers.</p>
+                        </article> 
+                    </div>
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Account Manager at Hustler Marketing</h2>
+                            <p class="card-text"><em>Jul 2018 - Nov 2018</em></p>
+                            <p class="card-text">Managed up to 3 clients simultaneously and made them millions in additional revenue via email.</p>
+                        </article> 
+                    </div>
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Assistant at Hustler Marketing</h2>
+                            <p class="card-text"><em>May 2018 - Jul 2018</em></p>
+                            <p class="card-text">Received personal Training in Account-managing, digital marketing and copywriting from the CEO of Hustler Marketing, Boštjan Belinger.</p>
+                        </article> 
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-lg justify-content-center card m-3">
+                        <article class="card-body">
+                            <h2 class="card-title">Marketing Assistant at Pure Interactions</h2>
+                            <p class="card-text"><em>May 2017 - Sep 2017</em></p>
+                            <p class="card-text">Worked in a small german personal developement coaching Start-Up.</p>
+                        </article> 
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <ul>
-                <li><a href="https://github.com/florian-bam" target="_blank" class="social github">Github</a></li>
-            </ul>
-            <p>&copy; 2021 Florian Gröne</p>
+        <!-- Bottom nav + Copywrite message -->
+            <div class="container">
+                <div class="row">
+                    <div class="col mr-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#top">Experience</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-7/" target="_blank">WebApp Dashboard</a>
+                                    <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-5/" target="_blank">Interactive Photo Gallery</a>
+                                    <a class="dropdown-item" href="http://floriangroene.com/Tech-Degree-Project-3/" target="_blank">Online Registration Form</a>
+                                    <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-6/" target="_blank">Game Show App</a>
+                                    <a class="dropdown-item" href="http://floriangroene.com/tech-degree-project-8/" target="_blank">API populated Employee Directory</a>
+                                </div>
+                                </li>
+                            <!-- 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reviews</a>
+                                -> Add Video Revies from Bostjan, Fritz and Nichelle + their websites (maybe even Jan?)
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="row justify-content-center">
+                            <a href="https://www.instagram.com/floriangroene/" target="_blank">
+                                    <img src="../svgs/instagram.svg" alt="Instagram" style="width: 30px;" class="m-3">
+                                </a>
+                            <a href="https://github.com/florian-bam" target="_blank">
+                                    <img src="../svgs/github.svg" alt="Github" style="width: 30px;" class="m-3">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <p>&copy; 2021, Florian Gröne</p>
+                </div>
+            </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>
